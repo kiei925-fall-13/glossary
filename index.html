@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KIEI925 Glossary</title>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <style>
+    dfn {
+      color: red;
+    }
+
+    .spaced {
+      margin-bottom: 20px
+    }
+  </style>
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>KIEI925 Glossary</h1>
+      <p>I don't think that word means what you think it means.</p>
+    </div>
+  </div>
+  <div class="container">
+    <dl class="dl-horizontal">
+      <div class="row spaced">
+        <div class="col-md-8">
+          <dt><dfn>class</dfn></dt>
+          <dt>category</dt>
+          <dt>type</dt>
+          <dd>A general blueprint for a <em>kind</em> of thing. Examples include: <code>String</code>, <code>Array</code>, <code>Fixnum</code>.</dd>
+        </div>
+      </div>
+      <div class="row spaced">
+        <div class="col-md-8">
+          <dt><dfn>object</dfn></dt>
+          <dt>instance</dt>
+          <dt>thing</dt>
+          <dt>noun</dt>
+          <dd>An individual member of a class. Examples include: the string<code>"howdy"</code>, the array <code>[1, 9, 4]</code>, and the fixnum <code>704</code>.</dd>
+        </div>
+      </div>
+      <div class="row spaced">
+        <div class="col-md-8">
+          <dt><dfn>method</dfn></dt>
+          <dt>instruction</dt>
+          <dt>verb</dt>
+          <dd>An action to be performed by an object. Examples include: String#capitalize, Array#length, and Fixnum#odd?.</dd>
+        </div>
+      </div>
+      <div class="row spaced">
+        <div class="col-md-8">
+          <dt><dfn>argument</dfn></dt>
+          <dt>input</dt>
+          <dd>
+            An input to a method used to customize its behavior. Arguments to methods are often required, but are sometimes optional. Examples:
+            <pre>
+puts                   # No argument provided, displays a blank line
+puts("Howdy")          # Displays our message
+"Hello".gsub("l", "w") # => "Hewwo"
+3.+(2)                 # => 5
+            </pre>
+          </dd>
+        </div>
+      </div>
+      <div class="row spaced">
+        <div class="col-md-8">
+          <dt><dfn>list</dfn></dt>
+          <dd>Used informally to refer to arrays and hashes.</dd>
+        </div>
+      </div>
+      <div class="row spaced">
+        <div class="col-md-8">
+          <dt><dfn>array</dfn></dt>
+          <dt>collection</dt></small>
+          <dd>
+            A data structure most often used to store an arbitrary number of similar elements. Elements are retrieved by position. Example:
+            <pre>
+a = ["Josh", "Jeff", "Raghu"]
+a[1] # => "Jeff"
+            </pre>
+          </dd>
+        </div>
+      </div>
+      <div class="row spaced">
+        <div class="col-md-8">
+          <dt><dfn>hash</dfn></dt>
+          <dt>key/value pairs</dt>
+          <dt>options</dt>
+          <dt>dictionary</dt>
+          <dd>
+            A data structure most often used to store a known list of distinct properties. Elements are retrieved by key. Example:
+            <pre>
+h = [:first => "Raghu", :last => "Betina"]
+a[:last] # => "Betina"
+            </pre>
+          </dd>
+        </div>
+      </div>
+    </dl>
+  </div>
+</body>
+</html>
